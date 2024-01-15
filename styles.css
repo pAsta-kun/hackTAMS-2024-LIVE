@@ -142,6 +142,9 @@ h6 {
     letter-spacing: 5px;
     margin-top: 35px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .remove{
@@ -219,4 +222,37 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-block: 50px;
+}
+
+.discordLogo{
+    width: 75px;
+    height: 75px;
+}
+.discordLink {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    /* background-color: transparent;
+    border: none;
+    border-radius: 100px; */
+    z-index: 100;
+}
+/* .discordLink:hover {
+    cursor: pointer;
+} */
+
+.spacing {
+    margin-block: 35px;
+}
+
+/* For Observer */
+.hidden {
+    opacity: 0%;
+    filter: blur(5px);
+    transition: all 1s;
+}
+.show{
+    opacity: 100%;
+    filter: blur(0px);
+
 }

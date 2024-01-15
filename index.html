@@ -7,109 +7,217 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
 </head>
-<body>
-    <div class="frontPage">
-        <span class="strech">
+<body onLoad="intialHide();">
+    <a href="https://discord.com/invite/Gp5Vr25uCa" class="discordLink hidden" target="_blank">
+        <img src="discordLogo.png" alt="" class="discordLogo">
+    </a>
+    <div class="frontPage hidden">
+        <span class="strech hidden">
             <h1> HACK<span class="greenOutline">TAMS</span></h1>
         </span>
-        <span class="strech3">
+        <span class="strech3 hidden">
             <h3> LIVE NOW!</h3>
         </span>
     </div>
-    <div class="scheduleSection">
+    <div class="scheduleSection hidden">
         <span class="strech2">
             <h2> SCHEDULE </h2>
         </span>
-        <button id="scheduelChangeBtn" class="scheduleChange" onClick="scheduleSwitch();" value=".in-person" >IN-PERSON</button>
-        <!-- <span class="strech3">
-            <h3> SATURDAY,1/27</h3>
-        </span> -->
-        <span class="h3NotOutline">SATURDAY, 1/27</span>
-        <span class="subtitle"> ALL TIMES ARE IN CST (UTC-6)</span>
-        <div class="scheduleBar greenBar in-person">
+        <button id="scheduelChangeBtn" class="scheduleChange hidden" onClick="scheduleSwitch();" value=".in-person" >IN-PERSON</button>
+        <span class="h3NotOutline hidden">SATURDAY, 1/27</span>
+        <span class="subtitle hidden"> ALL TIMES ARE IN CST (UTC-6)</span>
+
+        <!-- in person schedule -->
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">1:00 PM</span>
             <div class="centerItem">
                 <span class="item"> CHECK-IN (WILLIS ENTERANCE)</span>
             </div>
         </div>
-        <div class="scheduleBar greenBar in-person">
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">2:00 PM</span>
             <div class="centerItem">
                 <span class="item"> OPENING CEREMONY (WILLIS 250H)</span>
             </div>
         </div>
-        <div class="scheduleBar greenBar in-person">
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">2:30 PM</span>
             <div class="centerItem">
                 <span class="item"> TEAM FORMATIONS (WILLIS 250H)</span>
             </div>
         </div>
-        <div class="scheduleBar greenBar in-person">
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">3:00 PM</span>
             <div class="centerItem">
                 <span class="item">HACKING STARTS!</span>
             </div>
         </div>
 
-        <div class="scheduleBar aquaBar in-person">
+        <div class="scheduleBar aquaBar in-person hidden">
             <span class="time">4:00 PM</span>
             <div class="centerItem">
                 <span class="item"> COLLEGE MAIN PANEL (WILLIS 250H)</span>
             </div>
         </div>
-        <div class="scheduleBar aquaBar in-person">
+        <div class="scheduleBar aquaBar in-person hidden">
             <span class="time">5:00 PM</span>
             <div class="centerItem">
                 <span class="item"> GUEST SPEAKER - BILL WANG</span>
             </div>
         </div>
-        <div class="scheduleBar aquaBar in-person">
+        <div class="scheduleBar aquaBar in-person hidden">
             <span class="time">5:00 PM</span>
             <div class="centerItem">
                 <span class="item"> COLLEGE STATIONS (WILLIS 250H)</span>
             </div>
         </div>
 
-        <div class="scheduleBar greenBar in-person">
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">6:00 PM</span>
             <div class="centerItem">
                 <span class="item">DINNER (WILLIS FIRST FLOOR)</span>
             </div>
         </div>
 
-        <div class="scheduleBar aquaBar in-person">
+        <div class="scheduleBar aquaBar in-person hidden">
             <span class="time">7:00 PM</span>
             <div class="centerItem">
                 <span class="item"> GUEST SPEAKER - CECILIA ARAGON</span>
             </div>
         </div>
 
-        <div class="scheduleBar blueBar in-person">
+        <div class="scheduleBar blueBar in-person hidden">
             <span class="time">8:00 PM</span>
             <div class="centerItem">
                 <span class="item"> AI WORKSHOP (WILLIS 250H)</span>
             </div>
         </div>
-        <div class="scheduleBar blueBar in-person">
+        <div class="scheduleBar blueBar in-person hidden">
             <span class="time">9:00 PM</span>
             <div class="centerItem">
                 <span class="item"> MLH MINI EVENT - CUP STACKING</span>
             </div>
         </div>
 
-        <div class="scheduleBar greenBar in-person">
+        <div class="scheduleBar greenBar in-person hidden">
             <span class="time">10:00 PM</span>
             <div class="centerItem">
-                <span class="item">JUST DANCE COMPETITION (WILLIS 250H)</span>
+                <span class="item">JUST DANCE COMPETITION </span>
             </div>
         </div>
+
+        <!-- virtual schedule -->
+        <div class="scheduleBar greenBar virtual hidden">
+            <span class="time">1:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> OPENING CEREMONY</span>
+            </div>
+        </div>
+        <div class="scheduleBar greenBar virtual hidden">
+            <span class="time">2:30 PM</span>
+            <div class="centerItem">
+                <span class="item"> TEAM FORMATIONS</span>
+            </div>
+        </div>
+        <div class="scheduleBar greenBar virtual hidden">
+            <span class="time">3:00 PM</span>
+            <div class="centerItem">
+                <span class="item">HACKING STARTS!</span>
+            </div>
+        </div>
+
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">4:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> COLLEGE MAIN PANEL</span>
+            </div>
+        </div>
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">5:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> GUEST SPEAKER - BILL WANG</span>
+            </div>
+        </div>
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">5:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> COLLEGE STATIONS - GWU</span>
+            </div>
+        </div>
+
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">7:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> GUEST SPEAKER - CECILIA ARAGON</span>
+            </div>
+        </div>
+
+        <div class="scheduleBar blueBar virtual hidden">
+            <span class="time">8:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> AI WORKSHOP (WILLIS 250H)</span>
+            </div>
+        </div>
+        <div class="scheduleBar blueBar virtual hidden">
+            <span class="time">9:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> JEOPARDY</span>
+            </div>
+        </div>
+
+        <span class="h3NotOutline virtual spacing hidden">SUNDAY, 1/28</span>
+
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">10:00 AM</span>
+            <div class="centerItem">
+                <span class="item"> GUEST SPEAKER - JAMES HARDING</span>
+            </div>
+        </div>
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">11:00 AM</span>
+            <div class="centerItem">
+                <span class="item">GUEST SPEAKER - CHRIS RAPP</span>
+            </div>
+        </div>
+        <div class="scheduleBar blueBar virtual hidden">
+            <span class="time">12:00 PM</span>
+            <div class="centerItem">
+                <span class="item">MLH MINI EVENT- SYNK WORKSHOP</span>
+            </div>
+        </div>
+
+        <div class="scheduleBar greenBar virtual hidden">
+            <span class="time">1:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> START DEVPOST SUBMISSIONS</span>
+            </div>
+        </div>
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">1:30 PM</span>
+            <div class="centerItem">
+                <span class="item">UPLOAD VIDEO DEMO</span>
+            </div>
+        </div>
+        <div class="scheduleBar aquaBar virtual hidden">
+            <span class="time">2:00 PM</span>
+            <div class="centerItem">
+                <span class="item"> HACKING ENDS</span>
+            </div>
+        </div>
+        <div class="scheduleBar greenBar virtual hidden">
+            <span class="time">7:00 PM</span>
+            <div class="centerItem">
+                <span class="item">CLOSING CEREMONY</span>
+            </div>
+        </div>
+
     </div>
-    <div class="tracksSection">
+    <div class="tracksSection hidden">
         <span class="strech2">
             <h2> TRACKS </h2>
         </span>
         
-        <div class="trackType">
+        <div class="trackType hidden">
             <div class="track">
                 <h4 class="greenText">HACK</h4>
             </div>
@@ -118,7 +226,7 @@
             </div>
         </div>
 
-        <div class="trackType">
+        <div class="trackType hidden">
             <div class="track">
                 <h6>The Hack track is geared towards students who have an interest in computer science and those who want to build a working prototype. In other words, this is your typical hackathon competition.</h6>
             </div>
@@ -127,53 +235,53 @@
             </div>
         </div>
 
-        <h5 class="greenText maxBold"> SCORING </h5>
+        <h5 class="greenText maxBold hidden"> SCORING </h5>
 
-        <div class="trackType">
+        <div class="trackType hidden">
             <div class="track">
                 <h6>Originality/Creativity <span class="secondaryText">(33%)</span></h6>
                 <h6>Practical Implementation <span class="secondaryText">(33%)</span></h6>
                 <h6>Technical Complexity <span class="secondaryText">(33%)</span></h6> 
             </div>
-            <div class="track">
+            <div class="track hidden">
                 <h6>Originality/Creativity <span class="secondaryText">(33%)</span></h6>
                 <h6>Practical Implementation <span class="secondaryText">(33%)</span></h6>
                 <h6>Completeness and Polishness <span class="secondaryText">(33%)</span></h6>
             </div>
         </div>
 
-        <h4 class="greenText">PRIZES</h4>
-        <div class="trackType">
+        <h4 class="greenText hidden">PRIZES</h4>
+        <div class="trackType hidden">
             <div class="track">
                 <h5 class="secondaryText"> 1st PLACE HACK</h5>
                 <h6>Best hackathon project!</h6>
                 <h6>Prize: Ducky One 2 Mechanical Keyboard</h6>
             </div>
-            <div class="track">
+            <div class="track hidden">
                 <h5 class="secondaryText"> 1st PLACE PROTOTYPE</h5>
                 <h6>Best design project!</h6>
                 <h6>Prize: Rocketbook Smart Notebook</h6>
             </div>
         </div>
-        <div class="trackType">
+        <div class="trackType hidden">
             <div class="track">
                 <h5 class="secondaryText"> 2nd PLACE HACK</h5>
                 <h6>Second best hackathon project!</h6>
                 <h6>Prize: Google Nest Hub Smart Display</h6>
             </div>
-            <div class="track">
+            <div class="track hidden">
                 <h5 class="secondaryText"> Funniest Project</h5>
                 <h6>Most funny project!</h6>
                 <h6>Prize: LEGO Star Wars The Mandalorian & The Child Set</h6>
             </div>
         </div>
-        <div class="trackType">
+        <div class="trackType hidden">
             <div class="track">
                 <h5 class="secondaryText">3rd Place Hack</h5>
                 <h6>Third best hackathon project!</h6>
                 <h6>Prize: Polaroid Camera</h6>
             </div>
-            <div class="track">
+            <div class="track hidden">
                 <h5 class="secondaryText">Most Impactful Project</h5>
                 <h6>Most impactful project!</h6>
                 <h6>Prize: Antique World Map - 1000 Piece Jigsaw Puzzle</h6>
@@ -181,7 +289,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="hidden">
         <h6>Emergency Contact: Kelly Zhou</h6>
         <h6>Phone Number: (346)-818-4391 </h6>
         <h6>Email: <span class="accentText">tamscomputerscience@gmail.com</span></h6>
