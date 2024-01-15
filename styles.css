@@ -16,7 +16,7 @@ body {
 }
 /*  Page  Setup */
 .frontPage {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,14 +24,14 @@ body {
     margin-bottom: 100px;
 }
 .scheduleSection {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
 .tracksSection {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +96,9 @@ h6 {
     font-family: 'Lexend Tera', sans-serif;
     margin-top: 25px;
     font-weight: 600;
+}
+.maxBold {
+    font-weight: 900;
 }
 .strech {
     display: flex;
@@ -187,6 +190,7 @@ h6 {
     justify-content: center;
     align-items: center;
     width: 90%;
+    margin-block: 10px;
 }
 .track{
     text-align: center;
@@ -196,6 +200,9 @@ h6 {
 .greenText {
     color: var(--primary);
 }
-.accentText{
+.secondaryText{
     color: var(--secondary);
+}
+.accentText{
+    color: var(--accent);
 }
