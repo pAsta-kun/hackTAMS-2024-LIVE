@@ -144,6 +144,10 @@ h6 {
     margin-bottom: 50px;
     
 }
+.remove{
+    position: absolute;
+    display: none;
+}
 .scheduleChange:hover {
     cursor: pointer;
 }
@@ -205,4 +209,14 @@ h6 {
 }
 .accentText{
     color: var(--accent);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 50px;
 }
