@@ -254,5 +254,23 @@ footer {
 .show{
     opacity: 100%;
     filter: blur(0px);
+}
 
+/* Making it Responsive */
+@media(max-width: 840px) {
+    h1 {
+        font-size: 75px;
+        letter-spacing: 22.5px;
+        -webkit-text-stroke-width: 3px;
+    }
+    h2{
+        font-size: 60px;
+        letter-spacing: 17.5px;
+        -webkit-text-stroke-width: 2.5px;
+    }
+    h3{
+        font-size: 45px;
+        letter-spacing: 15px;
+        -webkit-text-stroke-width: 2px;
+    }
 }
