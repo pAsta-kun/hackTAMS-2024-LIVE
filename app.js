@@ -32,9 +32,22 @@ function intialHide() {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        //console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            console.log(entry.target.id === 'mobile')
+            if(window.innerWidth > 641 && (entry.target.id === 'mobile' || entry.target.classList.contains('mobileTrack')))
+            {
+            
+                entry.target.classList.remove('show')
+                // console.log(document.getElementById('mobile'))
+            }
+            // else {
+            //     console.log("target:    ")
+            //     console.log(entry.target)
+            //     console.log("what i'm lookin for:"   )
+            //     console.log(document.getElementsByClassName('mobileScheduleSection')[0])
+            // }
         }
     });
 });
@@ -42,6 +55,3 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1) => observer.observe(e1));
 
-function test() {
-    console.log('test')
-}
