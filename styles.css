@@ -273,4 +273,107 @@ footer {
         letter-spacing: 15px;
         -webkit-text-stroke-width: 2px;
     }
+    .h3NotOutline {
+        font-size: 45px;
+        letter-spacing: 15px;
+        align-items: center;
+    }
+    .scheduleChange {
+        padding-inline: 20px;
+        padding-block: 15px;
+        font-size: 16px;
+    }
+    .scheduleBar {
+        font-size: 16px;
+    }
+    .scheduleBar {
+        padding-left: 40px;
+    }
 }
+@media(max-width: 640px) {
+    h1 {
+        font-size: 65px;
+        letter-spacing: 20px;
+        -webkit-text-stroke-width: 3px;
+    }
+    h2{
+        font-size: 57px;
+        letter-spacing: 17.5px;
+        -webkit-text-stroke-width: 2.5px;
+    }
+    h3{
+        font-size: 40px;
+        letter-spacing: 15px;
+        -webkit-text-stroke-width: 2px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    .h3NotOutline {
+        font-size: 40px;
+        letter-spacing: 13px;
+        align-items: center;
+    }
+    .scheduleChange {
+        padding-inline: 10px;
+        padding-block: 15px;
+        font-size: 12px;
+    }
+    .scheduleBar {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+}
+@media(max-width: 480px) {
+    h1 {
+        font-size: 50px;
+        letter-spacing: 15px;
+        -webkit-text-stroke-width: 2px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 45px;
+        letter-spacing: 15px;
+        -webkit-text-stroke-width: 2px;
+    }
+    h3{
+        font-size: 35px;
+        letter-spacing: 12px;
+        -webkit-text-stroke-width: 1.5px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    .h3NotOutline {
+        font-size: 25px;
+        letter-spacing: 8px;
+        align-items: center;
+    }
+    .scheduleChange {
+        padding-inline: 10px;
+        padding-block: 15px;
+        font-size: 12px;
+    }
+    .scheduleBar {
+        font-size: 12px;
+        padding-left: 15px;
+        height: 55px;
+        width: 85%;
+        font-weight: 500;
+    }
+    .centerItem {
+        /* margin-left:45px; */
+    }
+    .time {
+        position: sticky;
+        margin-right: 0px;
+    }
+}
+
