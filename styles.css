@@ -329,6 +329,9 @@ footer {
     }
 }
 @media(max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
     #mobile {
         display: flex;
         opacity: 100%;
